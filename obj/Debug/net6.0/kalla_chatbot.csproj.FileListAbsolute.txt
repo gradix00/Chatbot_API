@@ -1,0 +1,17 @@
+C:\C#\kalla_chatbot\bin\Debug\net6.0\kalla_chatbot.exe
+C:\C#\kalla_chatbot\bin\Debug\net6.0\kalla_chatbot.deps.json
+C:\C#\kalla_chatbot\bin\Debug\net6.0\kalla_chatbot.runtimeconfig.json
+C:\C#\kalla_chatbot\bin\Debug\net6.0\kalla_chatbot.dll
+C:\C#\kalla_chatbot\bin\Debug\net6.0\kalla_chatbot.pdb
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.csproj.AssemblyReference.cache
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.AssemblyInfoInputs.cache
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.AssemblyInfo.cs
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.csproj.CoreCompileInputs.cache
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.dll
+C:\C#\kalla_chatbot\obj\Debug\net6.0\refint\kalla_chatbot.dll
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.pdb
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.genruntimeconfig.cache
+C:\C#\kalla_chatbot\obj\Debug\net6.0\ref\kalla_chatbot.dll
+C:\C#\kalla_chatbot\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\C#\kalla_chatbot\obj\Debug\net6.0\kalla_chatbot.csproj.CopyComplete

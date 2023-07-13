@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "appIIQMltohkL8OHN4WFsdn8qfy9fV6uFRCmKvbd2NTWaLp7VS6DP6xpb9VNNFWGMQbcAjK1+A/MAOwT0rcqeA==",
+  "success": true,
+  "projectFilePath": "C:\\C#\\kalla_chatbot\\kalla_chatbot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adrian.puchalski\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
