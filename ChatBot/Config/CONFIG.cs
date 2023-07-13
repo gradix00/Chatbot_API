@@ -10,6 +10,8 @@ namespace kalla_chatbot.ChatBot.Config
     {
         public static string DataFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\kalla_chatbot\\";
         public const string UserData = "user_data.json";
+        public const string Logs = "logs.txt";
+        public const string PhraseDefinitions = "phrase_definitions.txt";
         public const string UnknownPhrasesFile = "unknow_phrases.txt";
         public const string HappyMFile = "words_happy.txt";
         public const string SadMFile = "words_sad.txt";

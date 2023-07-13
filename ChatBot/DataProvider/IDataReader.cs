@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace kalla_chatbot.ChatBot.DataProvider
 {
-    public interface IDataFileReader
+    public interface IDataReader
     {
         public string FolderPath { get; set; }
 

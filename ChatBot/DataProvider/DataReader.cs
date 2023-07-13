@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace kalla_chatbot.ChatBot.DataProvider
 {
-    public class DataReader : IDataFileReader
+    public class DataReader : IDataReader
     {
         private string _folderPath = string.Empty;
         public string FolderPath { get => _folderPath; set => _folderPath = value; }

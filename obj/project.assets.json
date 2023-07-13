@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\kalla_chatbot\\kalla_chatbot.csproj",
+      "projectUniqueName": "C:\\C#\\Chatbot_API\\kalla_chatbot.csproj",
       "projectName": "kalla_chatbot",
-      "projectPath": "C:\\C#\\kalla_chatbot\\kalla_chatbot.csproj",
+      "projectPath": "C:\\C#\\Chatbot_API\\kalla_chatbot.csproj",
       "packagesPath": "C:\\Users\\adrian.puchalski\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\kalla_chatbot\\obj\\",
+      "outputPath": "C:\\C#\\Chatbot_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

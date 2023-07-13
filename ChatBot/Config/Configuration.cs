@@ -33,6 +33,16 @@ namespace kalla_chatbot.ChatBot.Config
                 File.WriteAllText(CONFIG.DataFolderPath + CONFIG.UserData, json);
             }
 
+            if (!File.Exists(CONFIG.DataFolderPath + CONFIG.Logs))
+            {
+                File.WriteAllText(CONFIG.DataFolderPath + CONFIG.Logs, null);
+            }
+
+            if (!File.Exists(CONFIG.DataFolderPath + CONFIG.PhraseDefinitions))
+            {
+                File.WriteAllText(CONFIG.DataFolderPath + CONFIG.PhraseDefinitions, null);
+            }
+
             if (!File.Exists(CONFIG.DataFolderPath + CONFIG.UnknownPhrasesFile))
             {
                 File.WriteAllText(CONFIG.DataFolderPath + CONFIG.UnknownPhrasesFile, null);
