@@ -32,24 +32,14 @@ namespace kalla_chatbot.ChatBot.AnalyzerMood
             Dictionary<UserMood, int> dict = new Dictionary<UserMood, int>();
             string[] phrases = TextProvider.GetWordsFromContext(text);
 
-            //filtering phrases when they are an empty string
-            if (phrases.Length > 0)
-            {
-                unknowPhrasesList = new List<string>();
-                foreach (var el in phrases)
-                {
-                    if (el.Length > 0)
-                        unknowPhrasesList.Add(el);
-                }
-                phrases = unknowPhrasesList.ToArray();
-            }
-
             try
             {
                 //identification how many words type 'happy'
                 foreach (string word in phrases)
                 {
                     int points = reader.CountPhraseInContext(word, reader.LoadData(happyMFile));
+
+                    //if words contain in file when remove from array
                     if (points > 0)
                         phrases = TextProvider.RemoveElementFromArray(word, phrases);
 
@@ -149,6 +139,7 @@ namespace kalla_chatbot.ChatBot.AnalyzerMood
                     else
                         dict[UserMood.bored] += points;
                 }
+                unknowPhrasesList = new List<string>(phrases);
             }
             catch(Exception ex)
             { 

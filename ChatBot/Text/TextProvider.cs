@@ -30,6 +30,18 @@ namespace kalla_chatbot.ChatBot.Text
                     word += text[index];
                 }
             }
+
+            //filtering phrases when they are an empty string
+            if (words.Count > 0)
+            {
+                var tmp = new List<string>();
+                foreach (var el in words)
+                {
+                    if (el.Length > 0)
+                        tmp.Add(el);
+                }
+                words = tmp;
+            }
             return words.ToArray();
         }
 
