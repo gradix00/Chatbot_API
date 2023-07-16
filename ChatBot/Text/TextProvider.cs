@@ -57,5 +57,43 @@ namespace kalla_chatbot.ChatBot.Text
             }
             return result.ToArray();
         }
+
+        public static bool ContainWord(string word, string[] arr)
+        {
+            foreach(string element in  arr)
+            {
+                if (element == word)
+                    return true;
+            }
+            return false;
+        }
+
+        public static int CompareTextsAndGetNumberOfRelWords(string text1, string text2)
+        {
+            List<List<string>> list = new()
+            {
+                new (GetWordsFromContext(text1)),
+                new (GetWordsFromContext(text2))
+            };
+            int result = 0;
+
+            //assigning an array with more elements and getting the id of the array
+            string[]? array = null;
+            Func<int> idList = () =>
+            {
+                int id = list[0].Count > list[1].Count ? 0 : 1;
+                array = list[id].ToArray();
+                return id == 1 ? 0 : 1;
+            };
+            int id = idList();
+
+            for (int index = 0; index < array.Length; index++)
+            {
+                if (ContainWord(array[index], list[id].ToArray()))
+                    result++;
+            }
+
+            return result;
+        }
     }
 }

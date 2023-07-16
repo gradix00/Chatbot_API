@@ -3,6 +3,7 @@ using kalla_chatbot.ChatBot.Analyzers;
 using kalla_chatbot.ChatBot.Config;
 using kalla_chatbot.ChatBot.DataProvider;
 using kalla_chatbot.ChatBot.Enums;
+using kalla_chatbot.ChatBot.Text;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,15 +20,10 @@ namespace kalla_chatbot
             while (true)
             {
                 Console.Write("\nEntry: ");
-                string? input = Console.ReadLine();
+                string? input = Console.ReadLine().ToLower();
+                int s = TextProvider.CompareTextsAndGetNumberOfRelWords("siema, co tam slychac ziomek złomek?", "siema, co tam złomek?");
+                Console.WriteLine(s);
 
-                IAnalyzer analyzer = new MoodAnalyzer();
-                string res = analyzer.Analyze(input);
-
-                Console.Write("\nKalla: ");
-                if(res == UserMood.unknown.ToString())
-                    Console.WriteLine("Nie rozumiem kontekstu, jestem jeszcze rozwijaną sztuczną inteligencją\nRejestruje wszystko co piszesz do plików, wiec nie martw sie");
-                analyzer.SaveAnalysis();
                 LogsManager log = new();
                 log.SaveLog($"User write '{input}'");
             }

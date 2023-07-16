@@ -8,9 +8,10 @@ namespace kalla_chatbot.ChatBot.Config
 {
     public static class CONFIG
     {
-        public static string DataFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\kalla_chatbot\\";
+        public static string DataFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer) + "\\kalla_chatbot\\";
         public const string UserData = "user_data.json";
         public const string Logs = "logs.txt";
+        public const string MeaningText = "meaning.txt";
         public const string PhraseDefinitions = "phrase_definitions.txt";
         public const string UnknownPhrasesFile = "unknow_phrases.txt";
         public const string HappyMFile = "words_happy.txt";
@@ -22,5 +23,7 @@ namespace kalla_chatbot.ChatBot.Config
         public const string TiredMFile = "words_tired.txt";
         public const string BoredMFile = "words_bored.txt";
         public const string User_ADMIN = "Adrian";
+        public const string startHello = "Cześć!";
+        public const string startQuestion = "Nie rozumiem kontekstu, wyjaśnij mi co znaczy te zdanie?";
     }
 }
